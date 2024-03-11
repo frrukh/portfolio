@@ -50,8 +50,10 @@
     <!-- flash start -->
     {% with messages = get_flashed_messages(with_categories=True) %}
     {% for category,message in messages %}
-    <div class="position p-1 alert alert-{{category}}" style="position: fixed; top: 100px; left: 10px; z-index: 1000;">
-        {{message}}
+    <div class="d-flex justify-content-center w-100">
+        <div class="position p-1 alert alert-{{category}} px-5" style="margin-top: 100px; position: absolute; z-index: 1000;">
+            {{message}}
+        </div>
     </div>
                 {% endfor %}
             {% endwith %}
