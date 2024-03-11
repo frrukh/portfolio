@@ -82,7 +82,9 @@
                     <p>
                         Hey there! I'm Muhammad Farrukh, and let me tell you, I live and breathe web development. It's not just a job for me—it's my passion. I'm always up for a challenge, whether it's solving complex problems or learning new technologies. From building sleek Django backends to crafting beautiful frontend experiences with HTML, CSS,Bootstrap and JavaScript, I put my heart and soul into every project. I'm all about pushing the boundaries and staying ahead of the curve in this ever-evolving field.Feel free to reach out—I'm eager to collaborate and bring your web projects to life. Let's turn your ideas into reality together!
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <a href="{{ url_for('static', filename='docs/resume.pdf') }}" download>
+                        <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    </a>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
